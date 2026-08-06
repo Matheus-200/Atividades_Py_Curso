@@ -1,0 +1,64 @@
+print = escreva
+input = leia
+
+toda váriavel é um objeto 
+exemplo:  (nome, idade, peso)
+nome =   guanabara 
+idade = 25 
+peso = 75.8
+print (nome, idade, peso)
+
+resultado = guanabara 25 75.8
+
+	- INTERAGINDO COM O USUÁRIO
+* Perguntando nome, idade e peso: 
+nome = input('qual é o seu nome ?')
+
+---- PARA COLOCAR AS CASAS DECIMAIS NOS USAMOS
+	{:.2f} - duas casas decimais depois da virgula
+	{:.4f} - quatro casas decimais depois da virgula
+
+---- PARA SOMAR VALORES NOS ULTIZAMOS O (INT)
+EX: 
+valor1 = int(input('Digite o valor: '))
+valor2 = int(input('Digite o valor: '))
+soma = valor1 + valor2 
+print('O resultado da soma é {}'.format(soma))
+
+--- PARA COLOCAR AS VARIAVEIS SEM ABRIR E FECHAR ASPAS NOS PODEMOS USAR O (.format())
+EX:
+print('VAMOS CALCULAR A MÉDIA DE QUATRO NUMEROS')
+n1 = int(input('Digite um valor: '))
+n2 = int(input('Digite um valor: '))
+n3 = int(input('Digite um valor: '))
+n4 = int(input('Digite um valor: '))
+
+soma = (n1 + n2 + n3 + n4)
+result = soma / 4 
+print('A média da soma de {}, {}, {}, e {}, é {:.3f}'.format(n1,n2,n3,n4,result))
+
+---- PARA SOMAR OS NUMEROS DENTRO DE UMA STRING PODEMOS ULTILIZAR O (SUM)
+EX:
+numbers = [3,456,46,45,345,32,2]
+
+result = sum(numbers)
+print('O resultado é', result)
+
+----- PARA VERIFICAR SE UMA STRING É NUMERICA OU NÃO ULTILIZAMOS(.isnumeric())
+EX:
+id = input('digite algo: ')
+print(id.isnumeric())
+
+resultado: true
+
+---- PARA VERIFICAR SE É ALFABETICO USAMOS (.isalpha())
+EX:
+id = input('digite algo: ')
+print(id.isalpha())
+
+---- PARA VERIFICAR SE É UM ALPHA NUMERICO
+EX:
+id = input('Digite algo: ')
+print(id.isalnum())
+
+
